@@ -1,0 +1,27 @@
+.module,
+.content {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.module-header,
+.content-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.toggle-arrow {
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+    transition: transform 0.2s ease-in-out;
+}
+.toggle-arrow.rotated {
+    transform: rotate(-90deg);
+}
+.remove-btn {
+    margin-left: 10px;
+    color: red;
+    cursor: pointer;
+}

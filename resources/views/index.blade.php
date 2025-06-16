@@ -7,7 +7,7 @@
 @if($errors->any())
     <div style="color: red">{{ $errors->first() }}</div>
 @endif
-<form method="POST" id="course-form">
+<form method="POST" action="/courses" id="course-form">
     @csrf
     <input name="name" placeholder="Course Title" required><br>
     <textarea name="description" placeholder="Description"></textarea><br>
