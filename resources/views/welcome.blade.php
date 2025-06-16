@@ -20,6 +20,13 @@
         @endif
     </head>
     <body>
+        <div class="sidebar">
+            <h3>Menu</h3>
+            <nav>
+                <a href="/">Create Course</a>
+                <a href="/courses">Course List</a>
+            </nav>
+        </div>
         @yield('content')
     </body>
 </html>

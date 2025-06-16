@@ -1,8 +1,83 @@
+body {
+    background-color: #f5f7fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.sidebar {
+    width: 220px;
+    background: #1e272e;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.sidebar h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.sidebar nav a {
+    display: block;
+    color: #dcdde1;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.sidebar nav a:hover {
+    background-color: #2f3640;
+    color: #ffffff;
+}
+.container {
+    flex: 1;
+    padding: 30px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+}
+button:hover {
+    background-color: #218838;
+}
+.btn-secondary {
+    background-color: #007bff;
+    color: white;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+.btn-secondary:hover {
+    background-color: #0069d9;
+}
 .module,
 .content {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #fefefe;
+    position: relative;
 }
 .module-header,
 .content-header {
@@ -10,18 +85,44 @@
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
+    margin-bottom: 10px;
 }
 .toggle-arrow {
     cursor: pointer;
-    font-size: 18px;
-    user-select: none;
-    transition: transform 0.2s ease-in-out;
+    font-size: 14px;
+    transition: transform 0.2s;
 }
 .toggle-arrow.rotated {
     transform: rotate(-90deg);
 }
 .remove-btn {
-    margin-left: 10px;
     color: red;
+    font-weight: bold;
     cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+/* corses list css */
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.course-table th,
+.course-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.course-table thead {
+    background-color: #f0f0f0;
 }
